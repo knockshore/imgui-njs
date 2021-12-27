@@ -1,0 +1,32 @@
+{
+  "name": "imgui-njs",
+  "version": "0.0.1",
+  "description": "Dear ImGUI JS implementation",
+  "main": "src/app/app.js",
+  "directories": {
+    "example": "example"
+  },
+  "sideEffects": true,
+  "//type": "module",
+  "devDependencies": {
+    "esbuild": "^0.14.8",
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config webpack/webpack.config.js --mode development",
+    "prod": "webpack --config webpack/webpack.config.js --mode production",
+    "esb": "esbuild src/app/app.js src/panels/demo.js --tree-shaking=false --minify --bundle --format=esm --sourcemap --target=chrome58,firefox57,safari11,edge16 --outdir=dist",
+    "esbdev": "esbuild src/app/app.js src/panels/demo.js --tree-shaking=false --bundle --format=esm --sourcemap --target=chrome58,firefox57,safari11,edge16 --outdir=dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knockshore/imgui-njs.git"
+  },
+  "author": "Karthick S. (yuvikarti@gmail.com)",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/knockshore/imgui-njs/issues"
+  },
+  "homepage": "https://github.com/knockshore/imgui-njs#readme"
+}

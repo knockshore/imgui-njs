@@ -1,5 +1,5 @@
-import ImguiApp from "/js/imgui-njs/app/app.js";
-import ImguiDemo from "/js/imgui-njs/panels/demo.js";
+import ImguiApp from "/js/dist/app/app.js";
+import ImguiDemo from "/js/dist/panels/demo.js";
 
 export var AppName = "Imgui-njs Example App";
 export var AppVersion = "1.0.0";

@@ -62,7 +62,7 @@ export class FileSystem
         }
         else
         {
-            this.path = require("path"); // webpack handles this?
+            this.path = null// require("path"); // webpack handles this?
             this.fs = null; // no filesystem here yet (eg: cordova)
         }
     }
